@@ -214,6 +214,16 @@ const CHAIN_INFO: ChainInfoMap = {
     color: darkTheme.chain_56,
     backgroundColor: darkTheme.chain_56_background,
   },
+  [SupportedChainId.FANTOM]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    docs: 'https://docs.fantom.foundation/',
+    explorer: 'https://testnet.ftmscan.com/',
+    infoLink: 'https://fantom.foundation/',
+    label: 'Fantom',
+    logoUrl: 'https://explorer.testnet8.waterfall.network/favicon-152-precomposed.png',
+    nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
+  },
 }
 
 export function getChainInfo(chainId: SupportedL1ChainId): L1ChainInfo
